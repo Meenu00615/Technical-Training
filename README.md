@@ -12,3 +12,6 @@ Result 3:
 
 Result 4: 
 ![Result_4](https://github.com/Meenu00615/Technical-Training/assets/149779716/61adfe8b-5ca4-40ba-971f-4dcfa0c8a692)
+
+Result 5:
+![Result_5](https://github.com/Meenu00615/Technical-Training/assets/149779716/433f9dfe-add9-43c8-bac5-4421e69801c6)
