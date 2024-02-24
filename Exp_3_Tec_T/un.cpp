@@ -1,62 +1,85 @@
-// C++ program to calculate maximum sum with equal
-// stack sum.
-#include <iostream>
+#include<iostream>
+#include<vector>
 using namespace std;
 
-// Returns maximum possible equal sum of three stacks
-// with removal of top elements allowed
-int maxSum(int stack1[], int stack2[], int stack3[], int n1,
-		int n2, int n3)
+// In this code, we are trying to find the maximum equal sum of every stack
+// Removal of the top/head stack element is allowed
+int maxSum(vector<int> & stack1, vector<int> & stack2, vector<int> & stack3)
 {
-	int sum1 = 0, sum2 = 0, sum3 = 0;
+    int sum1 = 0, sum2 = 0, sum3 = 0;
+    // checking the initial sum of stack 1
+    for(unsigned int i = 0; i < stack1.size(); i++)
+        sum1 += stack1[i];
 
-	// Finding the initial sum of stack1.
-	for (int i = 0; i < n1; i++)
-		sum1 += stack1[i];
+    for(unsigned int i = 0; i < stack2.size(); i++)
+        sum2 += stack2[i];
 
-	// Finding the initial sum of stack2.
-	for (int i = 0; i < n2; i++)
-		sum2 += stack2[i];
+    for(unsigned int i = 0; i < stack3.size(); i++)
+        sum3 += stack3[i];
 
-	// Finding the initial sum of stack3.
-	for (int i = 0; i < n3; i++)
-		sum3 += stack3[i];
+    unsigned int top1 = 0, top2 = 0, top3 = 0;
+    while(true) {
+        // There condition could be like that a stack is empty
+        // Defining first element as the top of the stack
+        // for the empty stack
+        if(top1 == stack1.size() || top2 == stack2.size() || top3 == stack3.size())
+            return 0;
+        // Here we are checking if stacks are similar or not.
+        // By removing the head element
+        if(sum1 == sum2 && sum2 == sum3)
+            return sum1;
+        if(sum1 >= sum2 && sum1 >= sum3)
+            sum1 -= stack1[top1++];
+        else if(sum2 >= sum1 && sum2 >= sum3)
+            sum2 -= stack2[top2++];
+        else if(sum3 >= sum2 && sum3 >= sum1)
+            sum3 -= stack3[top3++];
 
-	// As given in question, first element is top
-	// of stack..
-	int top1 = 0, top2 = 0, top3 = 0;
-	while (1) {
-		// If any stack is empty
-		if (top1 == n1 || top2 == n2 || top3 == n3)
-			return 0;
-
-		// If sum of all three stack are equal.
-		if (sum1 == sum2 && sum2 == sum3)
-			return sum1;
-
-		// Finding the stack with maximum sum and
-		// removing its top element.
-		if (sum1 >= sum2 && sum1 >= sum3)
-			sum1 -= stack1[top1++];
-		else if (sum2 >= sum1 && sum2 >= sum3)
-			sum2 -= stack2[top2++];
-		else if (sum3 >= sum2 && sum3 >= sum1)
-			sum3 -= stack3[top3++];
-	}
+        // Managing the stacks heights as needed
+        while(sum1 != sum2 || sum2 != sum3) {
+            int maxSum = max(sum1, max(sum2, sum3));
+            if(maxSum == sum1)
+                sum1 -= stack1[top1++];
+            else if(maxSum == sum2)
+                sum2 -= stack2[top2++];
+            else
+                sum3 -= stack3[top3++];
+        }
+    }
 }
 
-// Driven Program
 int main()
 {
-	int stack1[] = { 3, 2, 1, 1, 1 };
-	int stack2[] = { 4, 3, 2 };
-	int stack3[] = { 1, 1, 4, 1 };
+    vector<int> stack1, stack2, stack3;
+    int n1, n2, n3, element;
 
-	int n1 = sizeof(stack1) / sizeof(stack1[0]);
-	int n2 = sizeof(stack2) / sizeof(stack2[0]);
-	int n3 = sizeof(stack3) / sizeof(stack3[0]);
+    cout << "Enter Stack[1]'s Element:";
+    cin >> n1;
+    cout << "Enter the elements of stack:";
+    for(int i = 0; i < n1; ++i) {
+        cout << "Enter element " << i + 1 << ":";
+        cin >> element;
+        stack1.push_back(element);
+    }
 
-	cout<< maxSum(stack1, stack2, stack3, n1, n2, n3)
-		<< endl;
-	return 0;
+    cout << "Enter Stack[2]'s Element:";
+    cin >> n2;
+    cout << "Enter the elements of stack[2]:";
+    for(int i = 0; i < n2; ++i) {
+        cout << "Enter element " << i + 1 << ":";
+        cin >> element;
+        stack2.push_back(element);
+    }
+
+    cout << "Enter Stack[3]'s Element:";
+    cin >> n3;
+    cout << "Enter the elements of stack[3]:";
+    for(int i = 0; i < n3; ++i) {
+        cout << "Enter element " << i + 1 << ":";
+        cin >> element;
+        stack3.push_back(element);
+    }
+
+    cout << "Maximum possible common height: " << maxSum(stack1, stack2, stack3) << endl;
+    return 0;
 }
