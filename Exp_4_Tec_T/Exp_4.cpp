@@ -1,11 +1,10 @@
-#include <iostream>
-
+#include<iostream>
 using namespace std;
 
-//Definition for singly-linked list node
+//defining singly-linked list node
 class SinglyLinkedListNode {
-public:
-    int data;
+public: //public
+    int data;  //int datatype
     SinglyLinkedListNode* next;
 
     SinglyLinkedListNode(int node_data) {
@@ -14,7 +13,7 @@ public:
     }
 };
 
-//Function to insert a node at the head of the linked list
+//defining Function to insert a node at the head of the linked list
 SinglyLinkedListNode* insertNodeAtHead(SinglyLinkedListNode* llist, int data) {
     SinglyLinkedListNode* newNode = new SinglyLinkedListNode(data);
     
@@ -36,22 +35,32 @@ void printLinkedList(SinglyLinkedListNode* head) {
     }
     cout << endl;
 }
-//main
-int main() {
+
+//Function to create a linked list by taking user input
+SinglyLinkedListNode* createLinkedList() {
     int n, data;
     cout << "Enter the number of elements to be inserted at the head: ";
     cin >> n;
 
     SinglyLinkedListNode* head = nullptr;
-
+//for loop for element insertion
     for (int i = 0; i < n; i++) {
         cout << "Enter the element to be inserted: ";
         cin >> data;
         head = insertNodeAtHead(head, data);
     }
-//output
+//retun head
+    return head;
+}
+
+int main() {
+    //Create linked list based on user input
+    SinglyLinkedListNode* head = createLinkedList();
+
+    // Output the linked list after insertion
     cout << "Linked List after insertion: ";
     printLinkedList(head);
-
+//return
     return 0;
 }
+
