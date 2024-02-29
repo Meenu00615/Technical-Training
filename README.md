@@ -15,3 +15,8 @@ Result 4:
 
 Result 5:
 ![TT_5th](https://github.com/Meenu00615/Technical-Training/assets/149779716/2b8e5b9e-6c31-47b5-8eeb-3c3daff018ca)
+
+Result 6:
+![TT_EXP_6th](https://github.com/Meenu00615/Technical-Training/assets/149779716/5d6ec607-11fa-4ff0-9850-3efd62d76a68)
+
+
