@@ -11,7 +11,7 @@ Result 3:
 ![Finaaaa](https://github.com/Meenu00615/Technical-Training/assets/149779716/bd599ce4-a0f1-48ed-b4f9-89ffdee8e2a1)
 
 Result 4: 
-![Result_4](https://github.com/Meenu00615/Technical-Training/assets/149779716/61adfe8b-5ca4-40ba-971f-4dcfa0c8a692)
+![TT_4th](https://github.com/Meenu00615/Technical-Training/assets/149779716/05b0e96a-e31b-4ead-ae63-90ec1ad20a69)
 
 Result 5:
-![Result_5](https://github.com/Meenu00615/Technical-Training/assets/149779716/433f9dfe-add9-43c8-bac5-4421e69801c6)
+![TT_5th](https://github.com/Meenu00615/Technical-Training/assets/149779716/2b8e5b9e-6c31-47b5-8eeb-3c3daff018ca)
