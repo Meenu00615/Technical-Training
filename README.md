@@ -19,4 +19,6 @@ Result 5:
 Result 6:
 ![TT_EXP_6th](https://github.com/Meenu00615/Technical-Training/assets/149779716/5d6ec607-11fa-4ff0-9850-3efd62d76a68)
 
+Result 7:
+![TT_EXP_7](https://github.com/Meenu00615/Technical-Training/assets/149779716/e2d9bb58-57c7-4226-bf14-6c32d7a2e875)
 
