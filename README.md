@@ -22,3 +22,5 @@ Result 6:
 Result 7:
 ![TT_EXP_7](https://github.com/Meenu00615/Technical-Training/assets/149779716/e2d9bb58-57c7-4226-bf14-6c32d7a2e875)
 
+Result MST_1:
+![image](https://github.com/Meenu00615/Technical-Training/assets/149779716/2bb8fdf1-7bdb-40fc-b090-0950a43bd810)
