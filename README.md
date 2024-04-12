@@ -31,3 +31,11 @@ Result 8:
 Result 9:
 ![image](https://github.com/Meenu00615/Technical-Training/assets/149779716/1db80ee7-c451-40e5-94d6-03ba7eb58be4)
 
+Result 10:
+[1]
+![image](https://github.com/Meenu00615/Technical-Training/assets/149779716/173913e1-c772-458a-9ed1-bf3821cb143b)
+
+[2]
+![image](https://github.com/Meenu00615/Technical-Training/assets/149779716/ea62dbaa-4a56-44c2-8bdb-fafd597526e0)
+
+
