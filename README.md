@@ -24,3 +24,10 @@ Result 7:
 
 Result MST_1:
 ![image](https://github.com/Meenu00615/Technical-Training/assets/149779716/2bb8fdf1-7bdb-40fc-b090-0950a43bd810)
+
+Result 8:
+![image](https://github.com/Meenu00615/Technical-Training/assets/149779716/3cb2fb79-5bd1-40de-87f5-db1d80be2e2d)
+
+Result 9:
+![image](https://github.com/Meenu00615/Technical-Training/assets/149779716/1db80ee7-c451-40e5-94d6-03ba7eb58be4)
+
